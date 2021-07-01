@@ -30,7 +30,6 @@ try:
     comment_text = driver.find_element_by_id("comment").text
     assert comment_text == "Normal"
 
-    links = driver.find_elements_by_id("no_such_element")
 except Exception as e:
     print('Exception occured: ', e)
 finally:
